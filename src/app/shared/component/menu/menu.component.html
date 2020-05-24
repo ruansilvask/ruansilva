@@ -1,0 +1,52 @@
+<div class="wrapper" [ngClass]="{'': mostrarMenu,
+' collapse': !mostrarMenu}">
+
+  <div class="top_navbar">
+    <div class="hamburger" (click)="onClick()">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+    </div>
+    <div class="top_menu">
+      <div class="logo">Ruan Silva</div>
+      <ul>
+        <li><a href="https://github.com/RuanAlmeida">
+            <i class="fa fa-github-square"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/ruan-almeida-a30267103">
+            <i class="fa fa-linkedin"></i>
+          </a></li>
+        <li><a href="mailto:ruanrodrigues1994@gamil.com">
+            <i class="fa fa-envelope-square"></i>
+          </a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <ul>
+      <li><a routerLink="" routerLinkActive="active-link">
+          <span class="icon"><i class="fa fa-home"></i></span>
+          <span class="title">Inicio</span></a></li>
+      <li><a routerLink="/sobre" routerLinkActive="active-link">
+          <span class="icon"><i class="fa fa-address-card"></i></span>
+          <span class="title">Sobre</span>
+        </a></li>
+      <li><a routerLink="conhecimentos" routerLinkActive="active-link">
+          <span class="icon"><i class="fa fa-book"></i></span>
+          <span class="title">Conhecimentos</span>
+        </a></li>
+      <li><a routerLink="projetos" routerLinkActive="active-link">
+          <span class="icon"><i class="fa fa-briefcase"></i></span>
+          <span class="title">Projetos</span>
+        </a></li>
+      <li><a routerLink="contatos" routerLinkActive="active-link">
+          <span class="icon"><i class="fa fa-address-book"></i></span>
+          <span class="title">Contatos</span>
+        </a></li>
+    </ul>
+  </div>
+
+  <div class="main_container">
+    <ng-content></ng-content>
+  </div>
+</div>

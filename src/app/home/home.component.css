@@ -1,0 +1,49 @@
+header {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-fundo{
+    height: 40vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: left top;
+    -webkit-filter: grayscale(100%);
+}
+
+.titulo {
+    color: whitesmoke;
+    position: absolute;
+    opacity: 0;
+    animation: 1s ease 500ms animacaoTitulo forwards;
+}
+
+@keyframes animacaoTitulo {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.home-subtitle,
+.home-title {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.home-title {
+    font-size: 4em;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.home-subtitle {
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8em;
+}
